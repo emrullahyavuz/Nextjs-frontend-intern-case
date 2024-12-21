@@ -1,0 +1,27 @@
+generator client {
+ provider = "prisma-client-js"
+}
+
+datasource db {
+ provider = "postgresql" // veya kullandığınız veritabanı
+ url      = env("DATABASE_URL")
+}
+
+model User {
+ id        Int      @id @default(autoincrement())
+ email     String   @unique
+ createdAt DateTime @default(now())
+}
+
+model Blog {
+  id        Int      @id @default(autoincrement())
+  image     String
+  category  String
+  title     String
+  author    String
+  date      DateTime
+  content   String   @default("")
+}
+
+
+

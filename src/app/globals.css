@@ -17,5 +17,20 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  
+  
 }
+
+
+html.dark {
+  body  {
+    background-color: #141624;
+    color: #ffffff !important;
+  }
+  footer {
+    background-color: #141624;
+  }
+ 
+}
+
