@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 const prisma = new PrismaClient();
 export async function PUT(
  request: Request,
- { params }: { params: { id: string } }
+ { params }: { params: { id: string } } & { searchParams: { [key: string]: string | string[] | undefined } }
 ) {
  try {
    const { title, category, content } = await request.json();
