@@ -89,10 +89,10 @@ export default  function BlogListing() {
       <div className="flex space-x-4 flex-col text-center space-y-2 my-7">
         <h1 className="page-title text-4xl font-bold">Next.js Blog Uygulaması</h1>
           <div className="page-links divide-x-2 space-x-3 !ml-0">
-          <Link href="/" className="text-gray-600 hover:text-gray-900">
+          <Link href="/" className="text-gray-600 hover:text-gray-900 dark:hover:text-white">
             Home
           </Link>
-          <Link href="/link-one" className="text-gray-600 hover:text-gray-900 pl-3">
+          <Link href="/link-one" className="text-gray-600 hover:text-gray-900 pl-3 dark:hover:text-white">
             Link One
           </Link>
           </div>
